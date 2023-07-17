@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebSites</title>
+    <link rel="icon" href="img/portfolio.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("T5CK12a41R9DCm0rd");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <h1>My<span> Web Sites</span></h1>
+
+        <ul class="navbar">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#opponents">Yaptıklarım</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </header>
+
+    <!--home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Merhaba!</h4>
+            <h1>Benim Adım<br>Yusuf Semih<span> Sancar</span></h1>
+            <h3>Student</h3>
+            <a href="#contact" class="btn">Bana Ulaşın</a>
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/1.png">
+        </div>
+        <div class="about-text">
+            <h2>Hakkımda</h2>
+            <h4>Merhaba!</h4>
+            <p>Benim Adım Yusuf Semih Sancar.<br>Ben Oyun ve Web sitesi geliştirme konusuna ilgiliyim ve bu konuda bazı
+                projeler geliştirdim.<br>Daha fazlası İçin CV ve GitHub sayfama göz atın.</p>
+            <a href="https://drive.google.com/file/d/1Ev2u1SrUoeEvsjfjEXqsN0TStcaHEIem/view?usp=sharing" target="_blank"
+                class="btn">CV</a>
+            <a href="https://github.com/YusufSemihSancar" target="_blank" class="btn">GitHub</a>
+
+        </div>
+    </section>
+
+    <!--opponents-->
+    <section class="Opponents" id="opponents">
+        <div class="main-text">
+            <h2>Yaptıklarım</h2>
+            <h4>Yaptığım projelerin bazılarına burdan ulaşabilirsiniz</h4>
+        </div>
+
+        <div class="services-content">
+            <div class="box">
+                <img src="img/icons8-javascript-48.png" alt="serv1">
+                <h3>javaScript ile Oyun Geliştirme</h3>
+                <p><a href="javascript.html" target="_blank"><span>Buraya tıklayarak</span></a>,javaScript kullanarak
+                    yaptığım oyunlara göz atabilirsiniz.</p>
+            </div>
+
+            <div class="box">
+                <img src="img/opponents2.png" alt="serv2">
+                <h3>Web Sitesi Tasarlama</h3>
+                <p><a href="web.html" target="_blank"><span>Buraya tıklayarak</span></a>,yaptığım web sitelerine göz
+                    atabilirsiniz.</p>
+            </div>
+
+            <div class="box">
+                <img src="img/opponents3.png" alt="serv3">
+                <h3>Edit Videolarım</h3>
+                <p><a href="https://www.youtube.com/@lyricsvideo5434" target="_blank"><span>Buraya
+                            tıklayarak</span></a>,Youtube kanalıma gidip yapmış olduğum edit videolarına göz
+                    atabilirsiniz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Bana Ulaşın</h2>
+            <p>Benimle iletişime geçebilir.<br>Yaptığının projelere yardım edebilir ya da sorun varsa
+                cevaplayabilirim.<br>Beni işe alabilir ve benimle beraber çalışabilirsiniz.</p>
+            <p>Eğer yan taraftaki formu kullanmak istemez iseniz bana direkt olarak mail üzerinden ulaşabilirsiniz.</p>
+            <div class="contact-list">
+                <li><a href="#">Gebze, Kocaeli, Türkiye</a></li>
+                <li><a href="#">yusufsemihsancar08@gmail.com</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/sncr_yusufsemih/" target="_blank"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://discord.gg/k77QZfTa" target="_blank"><i class='bx bxl-discord'></i></a>
+                <a href="https://www.youtube.com/channel/UC0EhUxtDR6PDRhgmBbUWdjQ" target="_blank"><i
+                        class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Gönder" class="send">
+                <a href="hoverme.html" target="_blank"><input type="button" value="Gönder2" class="send" onclick="sendMail()"></a>
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>© Developed 2023 by Yusuf Semih Sancar</p>
+    </div>
+
+
+    <!--scroll top-->
+
+    <a href="#" class="top"><i class='bx bx-chevron-up-circle'></i></i></a>
+
+
+    <!--sustom scrollreveal link-->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--custom js link-->
+    <script type="text/javascript" src="js/hesap.js"></script>
+
+</body>
+
+</html>
